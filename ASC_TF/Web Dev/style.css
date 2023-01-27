@@ -1,0 +1,65 @@
+/* web variables */
+:root{
+    --rosewood: #5E0B15;
+    --sienna: #4A1C1F;
+    --copper: #8d5206;
+    --shadow: #facfad;
+    --bone: #E4D9C9;
+
+    --headingFont: Consolas;
+    --headingFont2: Corbel;
+    --normalFont: Book Antiqua;
+}
+
+body {
+    background-color: var(--copper);
+}
+
+#main_title {
+    font-family: var(--headingFont);
+    color: var(--bone);
+    font-size: 60px;
+    text-shadow: 5px 2px var(--sienna);
+    
+    margin: 40px;
+    text-align: center;
+}
+
+#page {
+    display: flex;
+}
+
+#interactive_guitar{
+    margin: 0px;
+}
+
+.sub_title {
+    font-family: Corbel;
+    font-size: 50px;
+    color: var(--shadow);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#about {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--bone);
+}
+
+#about_text {
+    font-family: var(--normalFont);
+    font-size: 20px;
+}
+
+#image_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#image_container img {
+    width: 500px;
+}
+
