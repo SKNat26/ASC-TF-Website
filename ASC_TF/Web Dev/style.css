@@ -1,7 +1,7 @@
 /* web variables */
 :root{
-    --rosewood: #5E0B15;
-    --sienna: #4A1C1F;
+    --rosewood: #720b174e;
+    --sienna: #330a0c88;
     --copper: #8d5206;
     --shadow: #facfad;
     --bone: #E4D9C9;
@@ -18,9 +18,8 @@ body {
 #main_title {
     font-family: var(--headingFont);
     color: var(--bone);
-    font-size: 60px;
+    font-size: 90px;
     text-shadow: 5px 2px var(--sienna);
-    
     margin: 40px;
     text-align: center;
 }
@@ -30,36 +29,229 @@ body {
 }
 
 #interactive_guitar{
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 50px;
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: var(--sienna);
+}
+
+#interactive_guitar img {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+@keyframes strings {
+    0%   {background-color:rgb(217, 214, 214);}
+    25%  {background-color:rgb(254, 11, 11);}
+    50%  {background-color:rgb(170, 255, 1);}
+    75%  {background-color:rgb(30, 0, 255);}
+    100% {background-color:rgb(251, 0, 255);}
+}   
+
+#string_EL {
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    transform: rotate(1deg);
+    background-color: rgb(217, 214, 214);
+    width: 5px;
+    height: 66vh;
+    animation-name: strings;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#string_A {
+    position: absolute;
+    z-index: 2;
+    left: 14%;
+    transform: rotate(0.5deg);
+    background-color: rgb(217, 214, 214);
+    width: 5px;
+    height: 66vh;
+    animation-name: strings;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#string_D {
+    position: absolute;
+    z-index: 2;
+    left: 18%;
+    transform: rotate(0.4deg);
+    background-color: rgb(217, 214, 214);
+    width: 4px;
+    height: 66vh;
+    animation-name: strings;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#string_G {
+    position: absolute;
+    z-index: 2;
+    left: 22%;
+    background-color: rgb(217, 214, 214);
+    width: 4px;
+    height: 66vh;
+    animation-name: strings;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#string_B {
+    position: absolute;
+    z-index: 2;
+    left: 26%;
+    transform: rotate(-0.5deg);
+    background-color: rgb(217, 214, 214);
+    width: 3px;
+    height: 66vh;
+    animation-name: strings;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#string_EH {
+    position: absolute;
+    z-index: 2;
+    left: 30%;
+    transform: rotate(-0.8deg);
+    background-color: rgb(217, 214, 214);
+    width: 3px;
+    height: 66vh;
+    animation-name: strings;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes on {
+    0%   {background-color:rgb(217, 214, 214);}
+    25%  {background-color:rgb(254, 11, 11);}
+    50%  {background-color:rgb(170, 255, 1);}
+    75%  {background-color:rgb(30, 0, 255);}
+    100% {background-color:rgb(251, 0, 255);}
+}
+
+#on {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 80%;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(217, 214, 214);
+    box-shadow: 4px 4px black;
+    border-radius: 10px;
+    padding: 10px;
+    animation-name: on;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#on p {
+    text-align: center;
+    font-family: var(--headingFont2);
+    font-weight: bolder;
+}
+
+#main_content {
+    width: 70vw;
+    padding: 60px;
+    margin-left: 50px;
+    background-color: var(--rosewood);
 }
 
 .sub_title {
     font-family: Corbel;
-    font-size: 50px;
+    font-size: 60px;
     color: var(--shadow);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     margin-top: 50px;
 }
 
 #about {
-    width: 600px;
+    width: 90%;
     margin: auto;
     text-align: center;
     color: var(--bone);
 }
 
-#about_text {
+.text {
     font-family: var(--normalFont);
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #image_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #image_container img {
-    width: 500px;
+    border: 8px solid var(--sienna);
+    height: 300px;
 }
 
+.video {
+    height:300px;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--sienna);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.line_connect {
+    width: 20px;
+    height: 150px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: var(--bone);
+}
+
+.card:hover {
+    box-shadow: 6px 6px black;
+}
+
+.side_1 video{
+    width: 500px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.description {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: var(--headingFont2);
+    font-weight: 900;;
+    color: var(--bone);
+    font-size: 35px;
+}
+
+.side_2{
+    display: none;
+    margin: 30px;
+    color: var(--bone);
+    text-align: center;
+}

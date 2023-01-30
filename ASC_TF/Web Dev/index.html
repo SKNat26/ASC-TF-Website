@@ -8,38 +8,138 @@
     <!-- favicon -->
     <link rel="icon" href="images/guitar_icon.png">
 
-    <!-- style -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 id="main_title">My Guitar's Personal Page</h1>
-    
+<body>    
     <div id="page">
         <div id="interactive_guitar">
             <img src="images/interactive_guitar.png" alt="interactive guitar">
+            <div id="string_EL">
+                <audio id="EL">
+                    <source src="audio/EL.mp3"></source>
+                </audio>
+            </div>
+            <div id="string_A">
+                <audio id="A">
+                    <source src="audio/A.mp3"></source>
+                </audio>
+            </div>
+            <div id="string_D">
+                <audio id="D">
+                    <source src="audio/D.mp3"></source>
+                </audio>
+            </div>
+            <div id="string_G">
+                <audio id="G">
+                    <source src="audio/G.mp3"></source>
+                </audio>
+            </div>
+            <div id="string_B">
+                <audio id="B">
+                    <source src="audio/B.mp3"></source>
+                </audio>
+            </div>
+            <div id="string_EH">
+                <audio id="EH">
+                    <source src="audio/EH.mp3"></source>
+                </audio>
+            </div>
+            <div id="on"><p>ON</p></div>
         </div>
-    
+
         <div id="main_content">
+            <h1 id="main_title">My Guitar's Website</h1>
+
             <div id="about">
-                <h2 class="sub_title">about</h2>
-                <p id="about_text">
+                <h2 class="sub_title">About</h2>
+                <p class="text">
                     A month ago, I wanted to find a new passion, specifically a musical one. After being inspired by the famous video of Amin Toofani playing his guitar, I ordered my first guitar. The guitar itself, a cheap beginner's guitar, isn't exceptional. However, what is exceptional is what I will be able to do with my guitar. With all the pressures of junior year and my extracurriculurs, I was unable to take guitar classes. So I decided to self-teach myself with the internet. My progress is slow, but it is progress nontheless.
                 </p>
             </div>
     
             <div id="images">
-                <h2 class="sub_title">images</h2>
+                <h2 class="sub_title">Images</h2>
                 <div id="image_container">
-                    <img src="https://www.cordobaguitars.com/wp-content/uploads/2017/08/C5_highlight_front_3.jpg" alt="image of guitar">
-                    <img src="https://www.cordobaguitars.com/wp-content/uploads/2017/08/C5_highlight_front_3.jpg" alt="image of guitar">
+                    <img src="images/guitar_pic1.jpg" alt="image of guitar">
+                    <img src="images/guitar_pic2.jpg" alt="image of guitar">
                 </div>
             </div>
     
             <div id="timeline">
-                
+                <h2 class="sub_title">Journey</h2>
+                <div id="timeline_container">
+                    <div class="card">
+                        <div class="side_1">
+                            <video class="video" controls>
+                                <source src="videos/sample_playing.mp4" type="video/mp4">
+                            </video>
+                            <p class="description">Tuning my Guitar</p>
+                        </div>
+                        <div class="side_2">
+                            <p class="text">When I first held my guitar, I had no clue how to even play it. My very first challenge was actually tuning the guitar and getting used to the strings and playing positions. It took about a day, but soon I could tune my guitar, sit in the correct position, and play a few notes with my pick.</p>
+                        </div>
+                    </div>
+                    <div class="line_connect">&nbsp;</div>
+                    <div class="card">
+                        <div class="side_1">
+                            <video class="video" controls>
+                                <source src="videos/sample_playing.mp4" type="video/mp4">
+                            </video>
+                            <p class="description">Learning the D-Chord</p>
+                        </div>
+                        <div class="side_2">
+                            <p class="text">Using a free online program, I started my first official guitar lesson. This lesson was all about the D-Chord. To most guitarists, the D-Chord is child's-play, however since it was my first chord, it was quite difficult to learn it. My fingers started hurting and slipping out of position. It took a few days, but I got the hang of it.</p>
+                        </div>
+                    </div>
+                    <div class="line_connect">&nbsp;</div>
+                    <div class="card">
+                        <div class="side_1">
+                            <video class="video" controls>
+                                <source src="videos/sample_playing.mp4" type="video/mp4">
+                            </video>
+                            <p class="description">Learning the A-Chord</p>
+                        </div>
+                        <div class="side_2">
+                            <p class="text">After the D-Chord, I moved on to learning the A-Chord. This also took a while to learn but wasn't anything too difficult. My next big challenge, however, was switching between the D-Chord and A-Chord while playing. At first, my switches were slow and inaccurate. Over the next week, with some practice, I was able to get decent switches between these two chords.</p>
+                        </div>
+                    </div>
+                    <div class="line_connect">&nbsp;</div>
+                    <div class="card">
+                        <div class="side_1">
+                            <video class="video" controls>
+                                <source src="videos/sample_playing.mp4" type="video/mp4">
+                            </video>
+                            <p class="description">Simple Riff</p>
+                        </div>
+                        <div class="side_2">
+                            <p class="text">Learning chords was useful, but I wanted to learn a simple riff just so I could play actual music on the guitar. Turns out, there are plenty of simple riffs that could be learned in about ten minutes. Here I am playing a watered down version of a riff from Smells Like Teen Spirit by Nirvana.</p>
+                        </div>
+                    </div>
+                    <div class="line_connect">&nbsp;</div>
+                    <div class="card">
+                        <div class="side_1">
+                            <video class="video" controls>
+                                <source src="videos/sample_playing.mp4" type="video/mp4">
+                            </video>
+                            <p class="description">First Song With Chords</p>
+                        </div>
+                        <div class="side_2">
+                            <p class="text">Here I am playing my first song with chords. It only consists of two really easy chords and it is called A Horse with No Name by America. While it is quite simple, these two chords are played throughout the entirety of the song.</p>
+                        </div>
+                    </div>
+                    <div class="line_connect">&nbsp;</div>
+                    <div class="card">
+                        <div class="side_1">
+                            <img src="images/question.png" class="video">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+    <script src="audio.js"></script>
 
 </body>
 </html>
