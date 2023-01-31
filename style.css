@@ -32,6 +32,7 @@ body {
     margin-left: 0px;
     margin-right: 50px;
     height: 100vh;
+    width: 20vw;
     position: sticky;
     display: flex;
     top: 0;
@@ -39,12 +40,15 @@ body {
     background-color: var(--sienna);
 }
 
+/* actual image of guitar on left */
 #interactive_guitar img {
     position: relative;
     z-index: 1;
     height: 100vh;
+    width: 20vw;
 }
 
+/* color changing animation for strings */
 @keyframes strings {
     0%   {background-color:rgb(217, 214, 214);}
     25%  {background-color:rgb(254, 11, 11);}
@@ -53,6 +57,7 @@ body {
     100% {background-color:rgb(251, 0, 255);}
 }   
 
+/* all strings were styled seperately */
 #string_EL {
     position: absolute;
     z-index: 2;
@@ -136,6 +141,7 @@ body {
     animation-iteration-count: infinite;
 }
 
+/* on button animation */
 @keyframes on {
     0%   {background-color:rgb(217, 214, 214);}
     25%  {background-color:rgb(254, 11, 11);}
@@ -166,7 +172,7 @@ body {
     font-family: var(--headingFont2);
     font-weight: bolder;
 }
-
+/* content on right of guitar */
 #main_content {
     width: 70vw;
     padding: 60px;
@@ -210,6 +216,7 @@ body {
     margin: 20px;
 }
 
+/* each card in journey section */
 .card {
     display: flex;
     width: 50%;
@@ -220,6 +227,7 @@ body {
     border-radius: 20px;
 }
 
+/* time line connector */
 .line_connect {
     width: 20px;
     height: 150px;
@@ -231,6 +239,12 @@ body {
 
 .card:hover {
     box-shadow: 6px 6px black;
+}
+
+.side_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .side_1 video{
@@ -248,10 +262,79 @@ body {
     color: var(--bone);
     font-size: 35px;
 }
-
+/* invisible text */
 .side_2{
     display: none;
     margin: 30px;
     color: var(--bone);
     text-align: center;
+}
+
+/* responsive design */
+@media only screen and (max-width: 1600px) {
+    #image_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image_container img {
+        margin-top: 30px;
+        width: 80%;
+        height: fit-content ;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .side_1 video {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .side_1 video {
+        width: 300px;
+        margin: 2px;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .sub_title {
+        font-size: 50px;
+    }
+
+    #main_title {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .side_1 video {
+        width: 200px;
+        margin: 2px;
+    }
+    
+    .text {
+        font-size: 20px;
+    }
+
+    .sub_title {
+        font-size: 40px;
+    }
+
+    #main_title {
+        font-size: 60px;
+    }
+
+    #interactive_guitar {
+        display: none;
+    }
+
+    #main_content {
+        width: 50vw;
+        margin-left: none;
+    }
 }
